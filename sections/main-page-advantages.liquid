@@ -1,0 +1,66 @@
+<div class="container mx-auto py-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16">
+    <div class="flex flex-col gap-4">
+      <h1 class="text-xl md:text-3xl font-bold">{{ section.settings.heading }}</h1>
+      <p class="text-sm font-normal md:text-base">{{ section.settings.description }}</p>
+    </div>
+    <div class="grid gap-4 md:gap-7">
+      {% for block in section.blocks %}
+        <div class="flex gap-7 items-center">
+          <div class="plus-background bg-black w-10 h-10 flex justify-center items-center rounded-full">
+            {% render 'icon-advantages-plus' %}
+          </div>
+          <div class="grid gap-3">
+            <h2 class="font-bold text-base">{{ block.settings.advantage-heading }}</h2>
+            <p class="text-sm font-normal md:text-base">{{ block.settings.advantage-description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Main Page Advantages",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "Packed with convenient,<br>street-friendly features",
+        "label": "Heading"
+      }, {
+        "type": "text",
+        "id": "description",
+        "default": "Flagship ANC headphones are designed for the hustle and bustle of modern life.",
+        "label": "Description"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "advantage-item",
+        "name": "Advantage Item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "advantage-heading",
+            "label": "Advantage Heading",
+            "default": "Responsive Touch Controls"
+          }, {
+            "type": "text",
+            "id": "advantage-description",
+            "label": "Advantage Description",
+            "default": "With a few taps, control your music playback, volume, and voice communication."
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+  .plus-background {
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+  }
+</style>

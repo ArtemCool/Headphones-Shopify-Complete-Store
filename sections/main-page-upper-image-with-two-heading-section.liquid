@@ -1,0 +1,38 @@
+<div class="container mx-auto py-8">
+  <img src="{{ section.settings.image | image_url }}" class="mb-4 md:mb-7" width="" height="" loading="lazy">
+  <div class="gap-7 md:flex md:justify-between">
+    <div class="grid gap-4">
+      <h2 class="text-2xl uppercase md:mb-0 md:text-4xl font-bold">{{ section.settings.first-heading }}</h2>
+      <h3 class="text-xl mb-3 md:mb-0 md:text-3xl font-bold">{{ section.settings.second-heading }}</h3>
+    </div>
+    <p class="text-sm md:text-base">{{ section.settings.description }}</p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Block With Two Headings",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }, {
+        "type": "text",
+        "default": "NOISE CANCELLATION",
+        "id": "first-heading",
+        "label": "First Heading"
+      }, {
+        "type": "text",
+        "default": "Cut off ambient noise with the push of a button",
+        "id": "second-heading",
+        "label": "Second Heading"
+      }, {
+        "type": "text",
+        "default": "Hybrid Digital Active Noise Cancelling. We know, it`s a mouthful. The Flagship ANC Headphones Combine physical NC with cutting-edge active cancellation.<br><br>Four external mics detect and neutralize up to 35dB of ambient noise, giving you a distraction-free listening experience every time.",
+        "id": "description",
+        "label": "Description"
+      }
+    ]
+  }
+{% endschema %}

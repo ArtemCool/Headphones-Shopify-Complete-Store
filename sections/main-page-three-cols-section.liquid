@@ -1,0 +1,61 @@
+<div class="container mx-auto py-8">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-7">
+    <img src="{{ section.settings.image | image_url }}" width="" height="" loading="lazy">
+    <div class="flex flex-col gap-4 md:mt-24">
+      <h1 class="uppercase text-xl md:text-3xl font-bold">{{ section.settings.second-col-heading }}</h1>
+      <h2 class="md:text-xl text-base text-gray-400">{{ section.settings.second-col-underheading }}</h2>
+      <p class="md:text-base text-sm">{{ section.settings.second-col-description }}</p>
+    </div>
+    <div class="flex flex-col gap-4 md:mt-24">
+      <h1 class="uppercase text-xl md:text-3xl font-bold">{{ section.settings.third-col-heading }}</h1>
+      <h2 class="md:text-xl text-base text-gray-400">{{ section.settings.third-col-underheading }}</h2>
+      <p class="md:text-base text-sm">{{ section.settings.third-col-description }}</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Three Columns Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "second-col-heading",
+        "label": "Second Column Heading",
+        "default": "DESIGN ETHOS"
+      },
+      {
+        "type": "text",
+        "id": "second-col-underheading",
+        "label": "Second Column Underheading",
+        "default": "Listen to audio your way, without the inessentials"
+      },
+      {
+        "type": "text",
+        "id": "second-col-description",
+        "label": "Second Column Description",
+        "default": "We stripped the inessentials and put our entire budget into creating the best audio equipment possible. No logos. No flash. Just purpose-built design with a laser-etched product code. Finally, you can enjoy audio your way- without being a walking billboard"
+      }, {
+        "type": "text",
+        "id": "third-col-heading",
+        "label": "Third Column Heading",
+        "default": "FIT & COMFORT"
+      }, {
+        "type": "text",
+        "id": "third-col-underheading",
+        "label": "Third Column Underheading",
+        "default": "Mindfully-designed for maximum comfort"
+      }, {
+        "type": "text",
+        "id": "third-col-description",
+        "label": "Third Column Description",
+        "default": "These feature premium-quality materials and an unusual, comfort-first oblong design that conforms to the shape of your ears, not the other way around. Wear them all day long without aches, pains, or overheating."
+      }
+    ]
+  }
+{% endschema %}

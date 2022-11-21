@@ -1,0 +1,119 @@
+<div class="pt-8">
+  <div class="footer-background-color-1">
+    <div class="container mx-auto py-3 px-4 md:py-8 md:px-5 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="grid sm:grid-cols-3 gap-4 md:pb-6">
+        {% for block in section.blocks %}
+          <a href="{{ routes.all_products_collection_url }}" class="grid gap-1 group">
+            <div class="h-80 sm:h-full overflow-hidden">
+              <img src="{{ block.settings.footer-image-item | image_url }}" class="group-hover:scale-105 w-full h-full object-cover transition duration-1000 ease-in-out transform" width="" height="" loading="lazy">
+            </div>
+            <p class="text-center text-gray-400 text-sm group-hover:text-white duration-300">{{ block.settings.footer-image-description }}</p>
+          </a>
+        {% endfor %}
+      </div>
+      <div class="grid gap-8 sm:gap-0 justify-center sm:justify-start sm:grid-cols-3">
+        <div class="flex flex-col gap-3 sm:gap-8">
+          <h2 class="text-gray-400 text-large font-bold uppercase">Shop</h2>
+          <div class="grid gap-2">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">All Products</a>
+            <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Headphones</a>
+            <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Earphones</a>
+            <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">EActive Noise Canceling</a>
+            <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Between True Wireless</a>
+            <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Studio</a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 sm:gap-8">
+          <h2 class="text-gray-400 text-large font-bold uppercase">Info</h2>
+          <div class="grid gap-2">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Our Story</a>
+            <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Sound Standards</a>
+            <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">C-1 Bulk Orders</a>
+            <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Refer a friend</a>
+            <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Contact & FAQ</a>
+            <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Jobs</a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 sm:gap-8">
+          <h2 class="text-gray-400 text-large font-bold uppercase">Talk to Us</h2>
+          <div class="grid gap-2">
+            <div class="flex gap-1 items-center">
+              {% render 'icon-mail-footer' %}
+              <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">contact@status.co</a>
+            </div>
+            <div class="flex gap-1 items-center">
+              {% render 'icon-facebook' %}
+              <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Facebook</a>
+            </div>
+            <div class="flex gap-1 items-center">
+              {% render 'icon-instagram' %}
+              <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Instagram</a>
+            </div>
+            <div class="flex gap-1 items-center">
+              {% render 'icon-twitter' %}
+              <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Twitter</a>
+            </div>
+            <div class="flex gap-1 items-center">
+              {% render 'icon-youtube' %}
+              <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Youtube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-background-color-2">
+    <div class="container mx-auto py-3 px-4 md:py-5 md:px-6">
+      <div class="grid gap-4 justify-center md:flex items-center md:justify-between">
+        <div class="flex items-center gap-2">
+          <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Terms & Conditions</a>
+          <div class="line-between"></div>
+          <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Privacy policy</a>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">2021 Starus</a>
+          <div class="line-between"></div>
+          <a href="#" class="text-gray-400 hover:text-white duration-300 text-xs">Developed by Artem Grechko</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .footer-background-color-1 {
+    background-color: #252F39;
+  }
+  .footer-background-color-2 {
+    background-color: #222222;
+  }
+  .line-between {
+    border: 0.5px solid #FFFFFF;
+    min-height: 15px;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Footer",
+    "blocks": [
+      {
+        "name": "Footer Images",
+        "type": "footer-images",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "footer-image-item",
+            "label": "Footer Image Item"
+          }, {
+            "type": "text",
+            "id": "footer-image-description",
+            "label": "Footer Image Description",
+            "default": "BT One Wireless Headphones"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

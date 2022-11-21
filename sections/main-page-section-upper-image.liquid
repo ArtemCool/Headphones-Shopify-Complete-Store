@@ -1,0 +1,30 @@
+<div class="container mx-auto py-8">
+  <img src="{{ section.settings.image | image_url }}" class="mb-4 md:mb-7" width="" height="" loading="lazy">
+  <div class="gap-7 md:flex md:justify-between">
+    <h2 class="text-xl mb-3 md:mb-0 md:text-3xl font-bold">{{ section.settings.heading }}</h2>
+    <p class="text-sm md:text-base">{{ section.settings.description }}</p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Block With Upper Image",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }, {
+        "type": "text",
+        "default": "Noise cancellation comes at a price. Now it`s the right one.",
+        "id": "heading",
+        "label": "Heading"
+      }, {
+        "type": "text",
+        "default": "High end NC headphones range are priced at a premium. Bulky and inconvenient, they`re designed for studio environments - not your daily commute or shopping trip. <br><br> The Status Flagship ANC headphones fill the gap. With an elegant no-logo design, pro-grade active noise cancelation and wishlist of convenient features, they're everything you ever wanted in a set of headphones, and then some.",
+        "id": "description",
+        "label": "Description"
+      }
+    ]
+  }
+{% endschema %}

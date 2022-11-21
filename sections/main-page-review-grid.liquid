@@ -1,0 +1,61 @@
+<div class="container mx-auto py-8">
+  <div class="grid md:grid-cols-2 review-grid-wrapper">
+    {% for block in section.blocks %}
+      <div class="review-grid-item-wrapper h-48 md:h-80 lg:h-72 xl:h-60 bg-white duration-300 z-10">
+        <div class="duration-300 z-20 flex flex-col justify-center hover:items-start focus:items-start hover:bg-black focus:bg-black hover:bg-opacity-30 focus:bg-opacity-30 min-h-full group">
+          <div class="flex items-center gap-4 md:gap-12 px-5 py-2 md:py-6 group-hover:gap-6 group-focus:gap-6 duration-300">
+            <img src="{{ block.settings.image | image_url }}" width="" height="" loading="lazy" class="rounded-full w-16 group-hover:w-10 group-focus:w-10 sm:w-20 md:w-40 md:group-hover:w-20 md:group-focus:w-20 duration-300">
+            <h1 class="text-3xl sm:text-5xl lg:text-8xl uppercase group-hover:text-white group-focus:text-white duration-300 group-hover:text-3xl group-focus:text-3xl sm:group-hover:text-5xl sm:group-focus:text-5xl group-hover:normal-case group-focus:normal-case">{{ block.settings.review-grid-item-name }}</h1>
+          </div>
+          <p class="px-5 md:text-base text-sm pb-6 hidden group-focus:block group-hover:block duration-300 text-white ">{{ block.settings.review-grid-item-description }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Review Grid",
+    "blocks": [
+      {
+        "type": "review-grid-item",
+        "name": "Review Grid Item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Photo"
+          }, {
+            "type": "text",
+            "id": "review-grid-item-name",
+            "label": "Name",
+            "default": "Name"
+          }, {
+            "type": "text",
+            "id": "review-grid-item-description",
+            "label": "Review Text",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa fringilla enim non bibendum at at. Mauris, neque, tristique gravida porttitor aenean. Rhoncus enim et amet, nisl, odio. Egestas non at ornare tristique nascetur."
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+  .review-grid-wrapper {
+    border: 0.5px solid #282828;
+  }
+  .review-grid-item-wrapper {
+    border: 0.5px solid #282828;
+  }
+  .review-grid-item-wrapper:hover {
+    background-image: url('../assets/grid-review-background.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: gray;
+
+  }
+</style>

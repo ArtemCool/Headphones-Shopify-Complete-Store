@@ -1,0 +1,36 @@
+<div class="container mx-auto py-8">
+  <h1 class="text-center text-xl md:text-3xl font-bold mb-4 md:mb-8">{{ section.settings.heading }}</h1>
+  <img src="{{ section.settings.image | image_url }}" class="mb-7" width="" height="" loading="lazy">
+  <div class="md:flex grid md:gap-11 gap-4">
+    <h2 class="md:text-3xl text-xl font-bold">{{ section.settings.bottom-heading }}</h2>
+    <p class="md:text-base text-sm">{{ section.settings.description }}</p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Image With Top Heading",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "We`re challenging the status quo of overpriced audio."
+      }, {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }, {
+        "type": "text",
+        "id": "bottom-heading",
+        "label": "Bottom Heading",
+        "default": "Cutting the inessentials keeps our prices fair."
+      }, {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Our competitors sell via retail middle-men and devote millions to brand awareness and marketing campaigns, significantly inflating the coasts of their products. Status Audio was determined to change that.<br><br>The mission is simple - to bring audiophile standards to the masses, and do so with a minimalist design aesthetic. 250,000+ customers and multiple industry awards later, it`s safe to say we`re succeeding."
+      }
+    ]
+  }
+{% endschema %}

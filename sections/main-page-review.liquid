@@ -1,0 +1,48 @@
+<div class="container mx-auto py-8">
+  <div class="md:flex md:justify-between grid gap-4">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when "review-message" %}
+          <p class="md:w-3/5 md:text-2xl md:tracking-widest font-medium text-xl">"<span>{{ block.settings.review-message-text }}</span>"</p>
+        {% when "review-author" %}
+          <p class="whitespace-nowrap text-sm">{{ block.settings.review-author-text }}</p>
+      {% endcase %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Main Page Review",
+    "blocks": [
+      {
+        "type": "review-message",
+        "name": "Review Message",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "review-message-text",
+            "label": "Review Message"
+          }
+        ]
+      }, {
+        "type": "review-author",
+        "name": "Review Author",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "review-author-text",
+            "label": "Review Author"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Main Page Review"
+      }
+    ]
+  }
+{% endschema %}

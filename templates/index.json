@@ -1,0 +1,38 @@
+{
+    "sections": {
+        "main-page-swiper": {
+            "type": "main-page-swiper"
+        },
+        "main-page-section-upper-image": {
+            "type": "main-page-section-upper-image"
+        },
+        "main-page-table": {
+            "type": "main-page-table"
+        },
+        "main-page-upper-image-with-two-heading-section": {
+            "type": "main-page-upper-image-with-two-heading-section"
+        },
+        "main-page-left-image-section": {
+            "type": "main-page-left-image-section"
+        },
+        "main-page-advantages": {
+            "type": "main-page-advantages"
+        },
+        "main-page-three-cols-section": {
+            "type": "main-page-three-cols-section"
+        },
+        "main-page-image-with-top-heading-section": {
+            "type": "main-page-image-with-top-heading-section"
+        },
+        "main-page-review-grid": {
+            "type": "main-page-review-grid"
+        },
+        "main-page-sale-section": {
+            "type": "main-page-sale-section"
+        },
+        "main-page-garantees": {
+            "type": "main-page-garantees"
+        }
+    },
+    "order": ["main-page-swiper","main-page-section-upper-image","main-page-table","main-page-upper-image-with-two-heading-section","main-page-left-image-section","main-page-advantages","main-page-three-cols-section","main-page-image-with-top-heading-section","main-page-review-grid","main-page-sale-section","main-page-garantees"]
+}

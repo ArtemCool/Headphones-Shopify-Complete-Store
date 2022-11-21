@@ -1,0 +1,122 @@
+{{ 'swiper.css' | asset_url | stylesheet_tag }}
+<script type="text/javascript" src="{{ 'swiper.min.js' | asset_url }}" defer></script>
+<script type="text/javascript" src="{{ 'main-page-swiper.js' | asset_url }}" defer></script>
+
+<div class="relative container mx-auto py-4 md:py-8">
+  <div class="main-page-swiper _swiper">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide">
+          <h1 class="text-center uppercase text-2xl md:text-8xl font-semibold pb-3 md:pb-8">{{ block.settings.productname }}</h1>
+          <div class="slide-inner-wrapper grid grid-cols-1 md:grid-cols-2 items-center">
+            <div>
+              <h2 class="text-xl text-center md:text-left md:text-5xl font-bold leading-snug mb-3">{{ block.settings.heading }}</h2>
+              <p class="md:w-1/2 text-sm mb-3">{{ block.settings.description }}</p>
+              <p class="text-xl text-center md:text-left pb-3 mb-3">From
+                <span class="font-extralight line-through ">{{ block.settings.old_price }}</span>
+                <span>{{ block.settings.new_price }}</span>
+              </p>
+              <div class="flex justify-center md:block">
+                <a href="{{ routes.all_products_collection_url }}" class="mb-6 mt-5 py-3 px-8 border border-black bg-gray-900 text-white hover:bg-white hover:text-gray-900 duration-300">Shop now</a>
+              </div>
+            </div>
+            <div>
+              <img src="{{ block.settings.image | image_url }}" width="" height="" class="max-w-md mx-auto" loading="lazy">
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="flex justify-center items-center">
+      <div class="main-page-swiper-button-prev flex items-center">
+        {% render 'icon-arrow-left' %}
+        <span class="font-light ml-2 hover:underline">Prev</span>
+      </div>
+
+      <div class="main-page-pagination mx-2"></div>
+
+      <div class="main-page-swiper-button-next flex items-center">
+        <span class="font-light mr-2 hover:underline">Next</span>
+        {% render 'icon-arrow-right' %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .main-page-pagination {
+    min-width: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    min-width: 6px;
+    min-height: 6px;
+    border-radius: 50px;
+    background: #909090;
+    transition: 0.3s;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    min-height: 10px;
+    border: 1px solid #282828;
+    background: #FFFFFF;
+    border-radius: 50px;
+    transition: 0.3s;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Main Page Swiper",
+    "blocks": [
+      {
+        "name": "Slide",
+        "type": "slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "productname",
+            "label": "Product Name",
+            "default": "FlagShip ANC"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Stunning headphones. Distraction-free audio."
+          },
+          {
+            "type": "text",
+            "id": "description",
+            "label": "Description",
+            "default": "The Flagship ANC headphones offer the holy triumverate of audio - exceptional sound quality and subtle product design at a fair price."
+          }, {
+            "type": "text",
+            "id": "old_price",
+            "label": "Price",
+            "default": "$199"
+          }, {
+            "type": "text",
+            "id": "new_price",
+            "label": "Price",
+            "default": "$179"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

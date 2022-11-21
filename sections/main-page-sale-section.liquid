@@ -1,0 +1,79 @@
+<div class="container mx-auto py-8">
+  <h1 class="text-xl mb-3 md:mb-5 md:text-3xl text-center md:text-left font-bold">{{ section.settings.heading }}</h1>
+  <div class="grid items-center gap-4 md:gap-16 grid-cols-1 md:grid-cols-2">
+    <div class="flex flex-col gap-4">
+      <h2 class="text-xl md:text-3xl font-bold">{{ section.settings.second-heading }}</h2>
+      <div class="flex gap-3 items-center">
+        <p class="text-xl md:text-3xl line-through font-light">${{ section.settings.previous-price }}</p>
+        {% render 'icon-long-right-arrow' %}
+        <p class="text-xl md:text-3xl font-bold">${{ section.settings.new-price }}</p>
+      </div>
+      <div class="grid gap-3">
+        {% for block in section.blocks %}
+          <div class="flex items-center gap-3">
+            {% render 'icon-line-sale' %}
+            {% if forloop.first %}
+              <p class="text-sm md:text-base font-bold">{{ block.settings.advantages-item-sale }}</p>
+            {% else %}
+              <p class="text-sm md:text-base">{{ block.settings.advantages-item-sale }}</p>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      <a href="{{ routes.all_products_collection_url }}" class="max-w-min whitespace-nowrap py-3 px-5 border border-black bg-gray-900 duration-300 text-base hover:bg-white hover:text-gray-900 text-white">Shop now</a>
+    </div>
+    <div class="">
+      <img src="{{ section.settings.image | image_url }}" width="" height="" loading="lazy">
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Main Page Sale Section",
+    "settings": [
+      {
+        "id": "heading",
+        "type": "text",
+        "label": "Heading",
+        "default": "Flagship ANC Headphones"
+      },
+      {
+        "id": "second-heading",
+        "type": "text",
+        "label": "Decond Heading",
+        "default": "ORDER TODAY AND SAVE $20"
+      },
+      {
+        "id": "previous-price",
+        "type": "text",
+        "label": "Old Price",
+        "default": "199"
+      },
+      {
+        "id": "new-price",
+        "type": "text",
+        "label": "New Price",
+        "default": "179"
+      }, {
+        "id": "image",
+        "type": "image_picker",
+        "label": "Image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "advantages",
+        "name": "Advantages",
+        "settings": [
+          {
+            "id": "advantages-item-sale",
+            "type": "text",
+            "label": "Advantages Item",
+            "default": "First 50 orders only."
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
