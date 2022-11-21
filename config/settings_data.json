@@ -1,6 +1,53 @@
 {
-  "current": "Default",
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "mobile_menu_title": "Menu",
+          "menu": "main-menu"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "58e5557b-64b1-44b5-8a4c-11da82f994b5": {
+            "type": "footer-images",
+            "settings": {
+              "footer-image-item": "shopify:\/\/shop_images\/pexels-christina-morillo-1181368.jpg",
+              "footer-image-description": "BT One Wireless Headphones"
+            }
+          },
+          "c540c3cb-5adf-46e2-a645-76f606edc6a9": {
+            "type": "footer-images",
+            "settings": {
+              "footer-image-item": "shopify:\/\/shop_images\/pexels-sound-on-3756771.jpg",
+              "footer-image-description": "Flagship ANC Headphones"
+            }
+          },
+          "e8bd0be8-ce64-4154-9dd7-eb73266ed035": {
+            "type": "footer-images",
+            "settings": {
+              "footer-image-item": "shopify:\/\/shop_images\/pexels-karolina-grabowska-4887246.jpg",
+              "footer-image-description": "Between True Wireless Earphones"
+            }
+          }
+        },
+        "block_order": [
+          "58e5557b-64b1-44b5-8a4c-11da82f994b5",
+          "c540c3cb-5adf-46e2-a645-76f606edc6a9",
+          "e8bd0be8-ce64-4154-9dd7-eb73266ed035"
+        ],
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
   "presets": {
-    "Default": { }
+    "Default": {
+    }
   }
 }

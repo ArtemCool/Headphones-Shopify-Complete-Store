@@ -1,38 +1,367 @@
 {
-    "sections": {
-        "main-page-swiper": {
-            "type": "main-page-swiper"
+  "sections": {
+    "main-page-swiper": {
+      "type": "main-page-swiper",
+      "blocks": {
+        "18e826bb-a7ef-4124-811c-a8da4e99e5de": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/index-headphones-second.jpg",
+            "productname": "FlagShip ANC",
+            "heading": "Stunning headphones. Distraction-free audio.",
+            "description": "The Flagship ANC headphones offer the holy triumverate of audio - exceptional sound quality and subtle product design at a fair price.",
+            "old_price": "$199",
+            "new_price": "$179"
+          }
         },
-        "main-page-section-upper-image": {
-            "type": "main-page-section-upper-image"
+        "e41c0494-7694-4f27-af65-73a30dc75cbf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/index-headphones-third.jpg",
+            "productname": "FlagShip ANC",
+            "heading": "Stunning headphones. Distraction-free audio.",
+            "description": "The Flagship ANC headphones offer the holy triumverate of audio - exceptional sound quality and subtle product design at a fair price.",
+            "old_price": "$199",
+            "new_price": "$179"
+          }
         },
-        "main-page-table": {
-            "type": "main-page-table"
-        },
-        "main-page-upper-image-with-two-heading-section": {
-            "type": "main-page-upper-image-with-two-heading-section"
-        },
-        "main-page-left-image-section": {
-            "type": "main-page-left-image-section"
-        },
-        "main-page-advantages": {
-            "type": "main-page-advantages"
-        },
-        "main-page-three-cols-section": {
-            "type": "main-page-three-cols-section"
-        },
-        "main-page-image-with-top-heading-section": {
-            "type": "main-page-image-with-top-heading-section"
-        },
-        "main-page-review-grid": {
-            "type": "main-page-review-grid"
-        },
-        "main-page-sale-section": {
-            "type": "main-page-sale-section"
-        },
-        "main-page-garantees": {
-            "type": "main-page-garantees"
+        "6d61ccfa-35c6-49f2-995b-419ffc203346": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/headphines-index-image.jpg",
+            "productname": "FlagShip ANC",
+            "heading": "Stunning headphones. Distraction-free audio.",
+            "description": "The Flagship ANC headphones offer the holy triumverate of audio - exceptional sound quality and subtle product design at a fair price.",
+            "old_price": "$199",
+            "new_price": "$179"
+          }
         }
+      },
+      "block_order": [
+        "18e826bb-a7ef-4124-811c-a8da4e99e5de",
+        "e41c0494-7694-4f27-af65-73a30dc75cbf",
+        "6d61ccfa-35c6-49f2-995b-419ffc203346"
+      ],
+      "settings": {
+      }
     },
-    "order": ["main-page-swiper","main-page-section-upper-image","main-page-table","main-page-upper-image-with-two-heading-section","main-page-left-image-section","main-page-advantages","main-page-three-cols-section","main-page-image-with-top-heading-section","main-page-review-grid","main-page-sale-section","main-page-garantees"]
+    "main-page-section-upper-image": {
+      "type": "main-page-section-upper-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/main-page-image-guy.jpg",
+        "heading": "Noise cancellation comes at a price. Now it`s the right one.",
+        "description": "High end NC headphones range are priced at a premium. Bulky and inconvenient, they`re designed for studio environments - not your daily commute or shopping trip. <br><br> The Status Flagship ANC headphones fill the gap. With an elegant no-logo design, pro-grade active noise cancelation and wishlist of convenient features, they're everything you ever wanted in a set of headphones, and then some."
+      }
+    },
+    "main-page-table": {
+      "type": "main-page-table",
+      "settings": {
+      }
+    },
+    "main-page-upper-image-with-two-heading-section": {
+      "type": "main-page-upper-image-with-two-heading-section",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/main-page-two-headings.jpg",
+        "first-heading": "NOISE CANCELLATION",
+        "second-heading": "Cut off ambient noise with the push of a button",
+        "description": "Hybrid Digital Active Noise Cancelling. We know, it`s a mouthful. The Flagship ANC Headphones Combine physical NC with cutting-edge active cancellation.<br><br>Four external mics detect and neutralize up to 35dB of ambient noise, giving you a distraction-free listening experience every time."
+      }
+    },
+    "4957e930-0fb3-4223-a053-9309beff7703": {
+      "type": "main-page-review",
+      "blocks": {
+        "0be54be8-8b55-47bc-8606-49c989e4a354": {
+          "type": "review-message",
+          "settings": {
+            "review-message-text": "The ambient cancellation is effective; I tested them by running my shop dust collection system which runs about 86 dB at 3 feet - the phones cancelled out all but highest pitch whine."
+          }
+        },
+        "a9fdd390-cd5c-4614-847e-f987a92644aa": {
+          "type": "review-author",
+          "settings": {
+            "review-author-text": "Hans N."
+          }
+        }
+      },
+      "block_order": [
+        "0be54be8-8b55-47bc-8606-49c989e4a354",
+        "a9fdd390-cd5c-4614-847e-f987a92644aa"
+      ],
+      "settings": {
+      }
+    },
+    "main-page-left-image-section": {
+      "type": "main-page-left-image-section",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/main-page-left-image-section.jpg",
+        "first-heading": "SOUND QUALITY",
+        "second-heading": "Immerse yourself in musician-worthy audio",
+        "description": "A detailed, dynamic sound gives you an immersive listening environment for crystal-clear calls and rich, well-balanced music.<br><br>Designed by musicians for musicians, our award-winning acoustic tuning and high-definition aptX codecs promise audio quality that punches well above its weight."
+      }
+    },
+    "eb2f1b2b-d0de-4e42-a0a9-321f8b98f4f8": {
+      "type": "main-page-review",
+      "blocks": {
+        "405d46a4-cae7-4020-8a48-495af26d7cb3": {
+          "type": "review-author",
+          "settings": {
+            "review-author-text": "Sandra B."
+          }
+        },
+        "f6ae0522-ff9e-4408-b73d-afac948ec7bb": {
+          "type": "review-message",
+          "settings": {
+            "review-message-text": "Feels like a private concert in my ears. Sounds really pure and clean. Going to take them to Hawaii and try on the plane. Will update!"
+          }
+        }
+      },
+      "block_order": [
+        "405d46a4-cae7-4020-8a48-495af26d7cb3",
+        "f6ae0522-ff9e-4408-b73d-afac948ec7bb"
+      ],
+      "settings": {
+      }
+    },
+    "main-page-advantages": {
+      "type": "main-page-advantages",
+      "blocks": {
+        "89f69560-23bc-4ac2-841d-e7be39d1d8cc": {
+          "type": "advantage-item",
+          "settings": {
+            "advantage-heading": "Responsive Touch Controls",
+            "advantage-description": "With a few taps, control your music playback, volume, and voice communication."
+          }
+        },
+        "047f3aba-73e5-4363-9fa8-4847a47d1824": {
+          "type": "advantage-item",
+          "settings": {
+            "advantage-heading": "Transparency Mode",
+            "advantage-description": "Need to stay alert? Instantly hear ambient noise by touching the right ear-cup."
+          }
+        },
+        "93fdc1c4-2fde-423a-8349-84b68263c097": {
+          "type": "advantage-item",
+          "settings": {
+            "advantage-heading": "Multi-Day Battery Life",
+            "advantage-description": "35 hours of continuous music playback with wireless and Active Noise Cancelling on."
+          }
+        },
+        "15c7a9f2-109a-493e-bfe3-19b433609dbe": {
+          "type": "advantage-item",
+          "settings": {
+            "advantage-heading": "Flexible Audio Outputs",
+            "advantage-description": "Bluetooth 5.0 plus a trusty 3.5mm cabled input (hey, you never know)."
+          }
+        }
+      },
+      "block_order": [
+        "89f69560-23bc-4ac2-841d-e7be39d1d8cc",
+        "047f3aba-73e5-4363-9fa8-4847a47d1824",
+        "93fdc1c4-2fde-423a-8349-84b68263c097",
+        "15c7a9f2-109a-493e-bfe3-19b433609dbe"
+      ],
+      "settings": {
+        "heading": "Packed with convenient,<br>street-friendly features",
+        "description": "Flagship ANC headphones are designed for the hustle and bustle of modern life."
+      }
+    },
+    "main-page-three-cols-section": {
+      "type": "main-page-three-cols-section",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/main-page-three-cols-section.jpg",
+        "second-col-heading": "DESIGN ETHOS",
+        "second-col-underheading": "Listen to audio your way, without the inessentials",
+        "second-col-description": "We stripped the inessentials and put our entire budget into creating the best audio equipment possible. No logos. No flash. Just purpose-built design with a laser-etched product code. Finally, you can enjoy audio your way- without being a walking billboard",
+        "third-col-heading": "FIT & COMFORT",
+        "third-col-underheading": "Mindfully-designed for maximum comfort",
+        "third-col-description": "These feature premium-quality materials and an unusual, comfort-first oblong design that conforms to the shape of your ears, not the other way around. Wear them all day long without aches, pains, or overheating."
+      }
+    },
+    "46d4ea4a-2ee7-47cb-a4df-29cda05dc497": {
+      "type": "main-page-review",
+      "blocks": {
+        "ca21eb37-d533-46b5-be03-9c70035103dd": {
+          "type": "review-message",
+          "settings": {
+            "review-message-text": "Light and very comfortable, the headset can be worn for many hours without fatigue. Ear cups and headband are incredibly and plush."
+          }
+        },
+        "b7a86daf-22b6-463f-88f9-274d0cab495f": {
+          "type": "review-author",
+          "settings": {
+            "review-author-text": "Alan W."
+          }
+        }
+      },
+      "block_order": [
+        "ca21eb37-d533-46b5-be03-9c70035103dd",
+        "b7a86daf-22b6-463f-88f9-274d0cab495f"
+      ],
+      "settings": {
+      }
+    },
+    "7a6fd3be-1d59-4f63-962a-bebda01ee67a": {
+      "type": "main-page-review",
+      "blocks": {
+        "22cfab29-e443-4bca-9b46-aac48e700012": {
+          "type": "review-author",
+          "settings": {
+            "review-author-text": "Dylan G."
+          }
+        },
+        "0b29bda8-485f-42f1-bf87-bcaba94792cb": {
+          "type": "review-message",
+          "settings": {
+            "review-message-text": "“These headphones Status masterfully crafted are a flawless fit for me, aesthetically pleasing, and provide sound quality comparable to the most expensive noise cancelling headphones.“"
+          }
+        }
+      },
+      "block_order": [
+        "22cfab29-e443-4bca-9b46-aac48e700012",
+        "0b29bda8-485f-42f1-bf87-bcaba94792cb"
+      ],
+      "settings": {
+      }
+    },
+    "main-page-image-with-top-heading-section": {
+      "type": "main-page-image-with-top-heading-section",
+      "settings": {
+        "heading": "We`re challenging the status quo of overpriced audio.",
+        "image": "shopify:\/\/shop_images\/image-with-top-heading.jpg",
+        "bottom-heading": "Cutting the inessentials keeps our prices fair.",
+        "description": "Our competitors sell via retail middle-men and devote millions to brand awareness and marketing campaigns, significantly inflating the coasts of their products. Status Audio was determined to change that.<br><br>The mission is simple - to bring audiophile standards to the masses, and do so with a minimalist design aesthetic. 250,000+ customers and multiple industry awards later, it`s safe to say we`re succeeding."
+      }
+    },
+    "main-page-review-grid": {
+      "type": "main-page-review-grid",
+      "blocks": {
+        "37c040c6-ddb7-4176-b4fe-434b1215d64b": {
+          "type": "review-grid-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/review-grid-1.jpg",
+            "review-grid-item-name": "Name",
+            "review-grid-item-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa fringilla enim non bibendum at at. Mauris, neque, tristique gravida porttitor aenean. Rhoncus enim et amet, nisl, odio. Egestas non at ornare tristique nascetur."
+          }
+        },
+        "e72f2116-2d71-492a-8f68-9661447a5b20": {
+          "type": "review-grid-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/review-grid-2.jpg",
+            "review-grid-item-name": "Name",
+            "review-grid-item-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa fringilla enim non bibendum at at. Mauris, neque, tristique gravida porttitor aenean. Rhoncus enim et amet, nisl, odio. Egestas non at ornare tristique nascetur."
+          }
+        },
+        "0688510b-535d-4b82-99e5-8ad1e7e3c1c5": {
+          "type": "review-grid-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/reviev-grid-3.jpg",
+            "review-grid-item-name": "Name",
+            "review-grid-item-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa fringilla enim non bibendum at at. Mauris, neque, tristique gravida porttitor aenean. Rhoncus enim et amet, nisl, odio. Egestas non at ornare tristique nascetur."
+          }
+        },
+        "0f9adc3b-3a0f-49fd-987f-e6482d5d1d17": {
+          "type": "review-grid-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/review-grid-4.jpg",
+            "review-grid-item-name": "Name",
+            "review-grid-item-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa fringilla enim non bibendum at at. Mauris, neque, tristique gravida porttitor aenean. Rhoncus enim et amet, nisl, odio. Egestas non at ornare tristique nascetur."
+          }
+        }
+      },
+      "block_order": [
+        "37c040c6-ddb7-4176-b4fe-434b1215d64b",
+        "e72f2116-2d71-492a-8f68-9661447a5b20",
+        "0688510b-535d-4b82-99e5-8ad1e7e3c1c5",
+        "0f9adc3b-3a0f-49fd-987f-e6482d5d1d17"
+      ],
+      "settings": {
+      }
+    },
+    "main-page-sale-section": {
+      "type": "main-page-sale-section",
+      "blocks": {
+        "7a18e225-8da6-4a38-a840-328a44bde8ce": {
+          "type": "advantages",
+          "settings": {
+            "advantages-item-sale": "First 50 orders only."
+          }
+        },
+        "ac6bd288-7bd1-44df-8917-512ad587aec3": {
+          "type": "advantages",
+          "settings": {
+            "advantages-item-sale": "Special offer ends 01\/03\/2021."
+          }
+        },
+        "e602dfc9-0744-4417-a082-0e904db16c79": {
+          "type": "advantages",
+          "settings": {
+            "advantages-item-sale": "Apply coupon code at checkout."
+          }
+        }
+      },
+      "block_order": [
+        "7a18e225-8da6-4a38-a840-328a44bde8ce",
+        "ac6bd288-7bd1-44df-8917-512ad587aec3",
+        "e602dfc9-0744-4417-a082-0e904db16c79"
+      ],
+      "settings": {
+        "heading": "Flagship ANC Headphones",
+        "second-heading": "ORDER TODAY AND SAVE $20",
+        "previous-price": "199",
+        "new-price": "179",
+        "image": "shopify:\/\/shop_images\/main-page-sale-image.jpg"
+      }
+    },
+    "main-page-garantees": {
+      "type": "main-page-garantees",
+      "blocks": {
+        "2233d6da-5e37-4fe2-b0ab-ca5d449c64f4": {
+          "type": "garantee-item",
+          "settings": {
+            "garantee-heading": "30 Day Returns",
+            "garantee-description": "Doesn`t meet your expectations? Return it within 30 days for a full refund - no questions asked."
+          }
+        },
+        "eba232e8-d713-4f54-a2c2-d0dcde3225de": {
+          "type": "garantee-item",
+          "settings": {
+            "garantee-heading": "1 Year Warranty",
+            "garantee-description": "We`ll replace your headphones if there are any defects in workmanship or materials."
+          }
+        },
+        "d79aef8d-ab80-4f5e-ab98-03cc02f62fe5": {
+          "type": "garantee-item",
+          "settings": {
+            "garantee-heading": "Musician Approved",
+            "garantee-description": "Made by musicians, for musicians. We strive to make exceptional audio equipment worthy of professionals."
+          }
+        }
+      },
+      "block_order": [
+        "2233d6da-5e37-4fe2-b0ab-ca5d449c64f4",
+        "eba232e8-d713-4f54-a2c2-d0dcde3225de",
+        "d79aef8d-ab80-4f5e-ab98-03cc02f62fe5"
+      ],
+      "settings": {
+        "heading": "Peace-of-mind Guarantees."
+      }
+    }
+  },
+  "order": [
+    "main-page-swiper",
+    "main-page-section-upper-image",
+    "main-page-table",
+    "main-page-upper-image-with-two-heading-section",
+    "4957e930-0fb3-4223-a053-9309beff7703",
+    "main-page-left-image-section",
+    "eb2f1b2b-d0de-4e42-a0a9-321f8b98f4f8",
+    "main-page-advantages",
+    "main-page-three-cols-section",
+    "46d4ea4a-2ee7-47cb-a4df-29cda05dc497",
+    "7a6fd3be-1d59-4f63-962a-bebda01ee67a",
+    "main-page-image-with-top-heading-section",
+    "main-page-review-grid",
+    "main-page-sale-section",
+    "main-page-garantees"
+  ]
 }
